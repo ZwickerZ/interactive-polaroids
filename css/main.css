@@ -10,13 +10,12 @@ html {
   padding: 10px;
   width: 250px;
   height: 162px;
-  position: relative;
+  position: absolute;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
-  transform: scale(0.6, 0.76);
+  transform: scale(.6, .6);
   transition: all 200ms ease;
-
 }
 
 .polaroid > img {
@@ -33,27 +32,40 @@ html {
 }
 
 .polaroid:nth-child(1) {
-  left: 0;
-  top: 150px;
-  transform: rotate(-12deg) ;
+  left: 180px;
+  top: 100px;
+  transform: rotate(-12deg);
   z-index: 0;
 }
 
 .polaroid:nth-child(2) {
-  left: 0;
+  left: 280px;
   top: 150px;
-  transform: rotate(6deg) ;
+  transform: rotate(6deg);
   z-index: 100;
 }
 
 .polaroid:nth-child(3) {
-  left: 0;
-  top: 150px;
-  transform: rotate(30deg) ;
+  left: 375px;
+  top: 100px;
+  transform: rotate(30deg);
 }
 
-/**!!!!!!!!!!!!!!!!!!!!! HOVER STATES START HERE !!!!!!!!!!!!!!!!!!!!!!!!!**/
+/** !!!!!!!!!!!!!!!!!!!!! HOVER STATES START HERE !!!!!!!!!!!!!!!!!!!!!!!!! **/
+
 .polaroid:hover {
   transform: rotate(0deg);
-  z-index: 100;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, .7);
+}
+
+.polaroid:nth-child(1):hover {
+  z-index: 500;
+}
+
+.polaroid:nth-child(2):hover {
+  z-index: 500;
+}
+
+.polaroid:nth-child(3):hover {
+  z-index: 500;
 }
